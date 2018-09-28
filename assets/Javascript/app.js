@@ -6,10 +6,10 @@ var correct = 0;
 var incorrect = 0;
 var unanswered = 0;
 
-var timeRemaining = 10;
+var timeRemaining = 60;
 var intervalId;
 
-//hides the unneeded panels on document load
+
 $(document).ready(function() {
 
 
@@ -145,13 +145,6 @@ function endGame() {
 
 
 function mainGame() {
-    //Sets stats to 0
-    var correct = 0;
-    var incorrect = 0;
-    var unanswered = 0;
-
-    //sets timer to 60 seconds
-    var timeRemaining = 60;
 
     //Starts timer counting down
     intervalId = setInterval(countdown, 1000);
