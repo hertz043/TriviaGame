@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Trivia Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/style/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="assets/Javascript/app.js"></script>
+
+</head>
+<body>
+    <div class="mainContent">
+        <h1>Classical Composer Trivia</h1>
+
+        <div id="startPanel">
+            <button id="startGame">Start Game</button>
+        </div>
+
+        <div id="activeGamePanel" style="display:none">
+
+            <!-- Counterdown timer that sits in the lower-right corner with you while you scroll -->
+            <div id="countdownTimer">60</div>
+
+            <form id=questionInputs>
+
+                <h3>#1 - Who of the following was a clasical composer?</h3>
+                <ol type="A">
+                    <li><input type="radio" name="question1" value="Q1-A">Nicolo Machiavelli</li>
+                    <li><input type="radio" name="question1" value="Q1-B">Leonardo da Vinci</li>
+                    <li><input type="radio" name="question1" value="Q1-C">Raphael</li>
+                    <li><input type="radio" name="question1" value="Q1-D">Giuseppe Verdi</li>
+                </ol>
+                <hr>
+
+                <h3>#2 - What city was Mozart born in?</h3>
+                <ol type="A">
+                    <li><input type="radio" name="question2" value="Q2-A">Salzburg</li>
+                    <li><input type="radio" name="question2" value="Q2-B">Prague</li>
+                    <li><input type="radio" name="question2" value="Q2-C">Vienna</li>
+                    <li><input type="radio" name="question2" value="Q2-D">Munich</li>
+                </ol>
+                <hr>
+
+                <h3>#3 - How many symphonies did Beethoven write?</h3>
+                <ol type="A">
+                    <li><input type="radio" name="question3" value="Q3-A">5</li>
+                    <li><input type="radio" name="question3" value="Q3-B">7</li>
+                    <li><input type="radio" name="question3" value="Q3-C">9</li>
+                    <li><input type="radio" name="question3" value="Q3-D">11</li>
+                </ol>
+                <hr>
+
+                <h3>#4 - Haydn's Symphony No. 45 is sometimes called the "Farewell" Symphony for what reason?</h3>
+                <ol type="A">
+                    <li><input type="radio" name="question4" value="Q4-A">Haydn wrote it as a memorial to his recently deceased father.</li>
+                    <li><input type="radio" name="question4" value="Q4-B">During the final movement of the symphony, the musicians stop playing and leave the stage one-by-one.</li>
+                    <li><input type="radio" name="question4" value="Q4-C">It was performed at the farewell ceremony for a visiting French royal delegation.</li>
+                    <li><input type="radio" name="question4" value="Q4-D">It was the last piece of music that Haydn wrote before he retired.</li>
+                </ol>
+                <hr>
+
+                <h3>#5 - John Cage's <i>4'33"</i> is notable for what reason?</h3>
+                <ol type="A">
+                    <li><input type="radio" name="question5" value="Q5-A">It's written to be performed by 4 trumpets and 33 trombones.</li>
+                    <li><input type="radio" name="question5" value="Q5-B">It's a choral work where the only lyrics are the words "four" and "thirty-three" sung over and over.</li>
+                    <li><input type="radio" name="question5" value="Q5-C">It's four minutes and thirty-three seconds of silence.</li>
+                    <li><input type="radio" name="question5" value="Q5-D">It's so slow that it would take 433 years to complete a full performance.</li>
+                </ol>
+                <hr>
+
+                <h3>#6 - Which man was given the nickname of "The Dean of American Composers" by his peers?</h3>
+                <ol type="A">
+                    <li><input type="radio" name="question6" value="Q6-A">Samuel Barber</li>
+                    <li><input type="radio" name="question6" value="Q6-B">Aaron Copland</li>
+                    <li><input type="radio" name="question6" value="Q6-C">Leonard Bernstein</li>
+                    <li><input type="radio" name="question6" value="Q6-D">Charles Ives</li>
+                </ol>
+                <hr>
+
+                <h3>#7 - Featured in Disney's 1940 film <i>Fantasia</i>, the piece <i>Night on Bald Mountain</i> was written by which composer?</h3>
+                <ol type="A">
+                    <li><input type="radio" name="question7" value="Q7-A">Modest Mussorgsky</li>
+                    <li><input type="radio" name="question7" value="Q7-B">Maurice Ravel</li>
+                    <li><input type="radio" name="question7" value="Q7-C">Nikolai Rimsky-Korsakov</li>
+                    <li><input type="radio" name="question7" value="Q7-D">Alexander Borodin</li>
+                </ol>
+                <hr>
+
+                <h3>#8 - Though he hated his music being labeled this way, Claude Debussy's works are generally considered part of what musical style?</h3>
+                <ol type="A">
+                    <li><input type="radio" name="question8" value="Q8-A">Abstract</li>
+                    <li><input type="radio" name="question8" value="Q8-B">Romantic</li>
+                    <li><input type="radio" name="question8" value="Q8-C">Impressionist</li>
+                    <li><input type="radio" name="question8" value="Q8-D">Musique concrète</li>
+                </ol>
+                <hr>
+
+                <h3>#9 - Richard Wagner's <i>The Ring of the Nibelung</i> is an epic opera cycle coinsisting of four parts -- which of the following operas is NOT one of those four parts?</h3>
+                <ol type="A">
+                    <li><input type="radio" name="question9" value="Q9-A">Twilight of the Gods</li>
+                    <li><input type="radio" name="question9" value="Q9-B">The Rhinegold</li>
+                    <li><input type="radio" name="question9" value="Q9-C">The Valkyrie</li>
+                    <li><input type="radio" name="question9" value="Q9-D">Tristan and Isolde</li>
+                </ol>
+                <hr>
+
+                <h3>#10 - Widely associated with graduation ceremonies, the march <i>Pomp and Circumstance</i> was written by which composer?</h3>
+                <ol type="A">
+                    <li><input type="radio" name="question10" value="Q10-A">Edward Elgar</li>
+                    <li><input type="radio" name="question10" value="Q10-B">Gustav Holst</li>
+                    <li><input type="radio" name="question10" value="Q10-C">Ralph Vaughan Williams</li>
+                    <li><input type="radio" name="question10" value="Q10-D">Benjamin Britten</li>
+                </ol>
+                <hr>
+
+            </form>
+
+            <button id="submitAnswers">Submit Answers</button>
+
+        </div>
+
+        <div id="endPanel" style="display:none">
+            <h2>Finished!</h2>
+            <h3 id="correctAnswers">Correct answers: 0</h3>
+            <h3 id="incorrectAnswers">Incorrect answers: 0</h3>
+            <h3 id="unAnswers">Unanswered: 0</h3>
+
+        </div>
+
+
+    </div>
+</body>
+</html>
